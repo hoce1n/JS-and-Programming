@@ -1,40 +1,38 @@
-# [Concept Title]
+# [عنوان مفهوم]
 
-## Problem
+## مسئله (Problem)
 
-What real-world or programming problem exists before this concept? Describe the limitation,
-difficulty, or recurring situation that needs to be addressed.
+چه مسئله‌ی واقعی یا برنامه‌نویسی پیش از این مفهوم وجود دارد؟ محدودیت، دشواری یا موقعیت تکرارشونده‌ای
+را توضیح دهید که باید حل شود.
 
-## Computational Need
+## نیاز محاسباتی (Computational Need)
 
-What capability does a computer need in order to address that problem? State the need in operational
-terms, such as preserving information, choosing between alternatives, repeating work, or
-coordinating activities.
+رایانه برای حل آن مسئله به چه قابلیتی نیاز دارد؟ نیاز را عملیاتی بیان کنید؛ مانند حفظ اطلاعات،
+انتخاب میان چند مسیر، تکرار کار یا هماهنگ‌کردن فعالیت‌ها.
 
-## Concept
+## مفهوم (Concept)
 
-What general programming concept answers that computational need? Explain the concept independently
-of JavaScript syntax.
+کدام مفهوم عمومی برنامه‌نویسی این نیاز محاسباتی را پاسخ می‌دهد؟ ابتدا مفهوم را مستقل از Syntax
+JavaScript توضیح دهید.
 
-## Language Feature
+## قابلیت زبان (Language Feature)
 
-How does JavaScript model or implement this concept? Identify the relevant language or runtime
-feature and describe its behavior, including important constraints or trade-offs.
+JavaScript این مفهوم را چگونه مدل یا پیاده‌سازی می‌کند؟ قابلیت زبانی یا Runtime مرتبط را شناسایی
+کنید و رفتار، محدودیت‌ها و ملاحظات مهم آن را بنویسید.
 
-## Syntax
+## نحو (Syntax)
 
-Record the JavaScript syntax used to express the feature. Include only examples written and
-understood by you.
+Syntax مربوط به این قابلیت را ثبت کنید. فقط مثال‌هایی را اضافه کنید که خودتان نوشته و درک کرده‌اید.
 
 ```js
-// Add your own example here.
+// مثال خودتان را اینجا بنویسید.
 ```
 
-## Personal Notes & REPL Verification
+## یادداشت‌های شخصی و راستی‌آزمایی در REPL
 
-Write your current mental model in your own words. Record experiments performed in the personal
-REPL, the observed output, and any surprising behavior that changed or refined your understanding.
+مدل ذهنی فعلی خود را با زبان خودتان بنویسید. آزمایش‌های انجام‌شده در REPL، خروجی مشاهده‌شده و هر
+رفتار غیرمنتظره‌ای را ثبت کنید؛ به‌خصوص مواردی که درک شما را اصلاح یا دقیق‌تر کرده‌اند.
 
-| Question or hypothesis | REPL experiment | Observed result | Updated understanding |
-| ---------------------- | --------------- | --------------- | --------------------- |
-|                        |                 |                 |                       |
+| پرسش یا فرضیه | آزمایش در REPL | نتیجه‌ی مشاهده‌شده | درک به‌روزشده |
+| ------------- | -------------- | ------------------ | ------------- |
+|               |                |                    |               |

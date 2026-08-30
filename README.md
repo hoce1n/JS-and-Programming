@@ -1,79 +1,81 @@
 # JS-and-Programming
 
-## Project Vision
+## چشم‌انداز پروژه
 
-This repository documents a long-term effort to understand JavaScript deeply—not merely to memorize
-syntax, but to build an accurate mental model of how the language and its execution runtime behave.
+این مخزن مسیر بلندمدت من برای فهم عمیق JavaScript را ثبت می‌کند؛ نه فقط حفظ Syntax، بلکه ساختن یک
+مدل ذهنی دقیق از رفتار زبان و Runtime اجرایی آن.
 
-The goal is to connect everyday JavaScript features to the computational problems they solve. Each
-topic is approached from first principles and tested through deliberate reasoning, handwritten code,
-and experiments in a personal REPL. Framework experience with React, TypeScript, Next.js, and Prisma
-provides practical context, but the focus here is the underlying language and runtime.
+هدف این است که هر قابلیت JavaScript را به مسئله‌ی محاسباتی‌ای که برای حل آن ایجاد شده است وصل کنم.
+هر موضوع از اصول پایه، با استدلال، نوشتن کد توسط خودم و آزمایش در REPL شخصی بررسی می‌شود. تجربه‌ی
+کاری با React، TypeScript، Next.js و Prisma زمینه‌ی عملی پروژه است، اما تمرکز اصلی بر خود زبان و
+Runtime آن قرار دارد.
 
-> The central question is not only “What is this syntax?” but also “What problem did this language
-> solve with this feature?”
+> سؤال مرکزی فقط «این Syntax چیست؟» نیست؛ بلکه «این قابلیت چه مسئله‌ای را برای زبان حل می‌کند؟» است.
 
-## Core Framework
+## چارچوب اصلی یادگیری
 
-Every concept is studied through the following progression:
+هر مفهوم از مسیر زیر بررسی می‌شود:
 
-| Layer                  | Guiding question                                                 |
-| ---------------------- | ---------------------------------------------------------------- |
-| **Problem**            | What real-world or programming difficulty needs to be addressed? |
-| **Computational Need** | What capability must a computer have to address that difficulty? |
-| **Concept**            | What general programming idea satisfies that need?               |
-| **Language Feature**   | How does JavaScript model or implement the concept?              |
-| **Syntax**             | How is that feature expressed in JavaScript code?                |
+| لایه                                   | پرسش راهنما                                             |
+| -------------------------------------- | ------------------------------------------------------- |
+| **Problem — مسئله**                    | چه دشواری واقعی یا برنامه‌نویسی‌ای باید حل شود؟         |
+| **Computational Need — نیاز محاسباتی** | رایانه برای حل این دشواری به چه قابلیتی نیاز دارد؟      |
+| **Concept — مفهوم**                    | کدام ایده‌ی عمومی برنامه‌نویسی این نیاز را پاسخ می‌دهد؟ |
+| **Language Feature — قابلیت زبان**     | JavaScript این مفهوم را چگونه مدل یا پیاده‌سازی می‌کند؟ |
+| **Syntax — نحو**                       | این قابلیت چگونه در کد JavaScript بیان می‌شود؟          |
 
-Syntax is therefore the final expression of understanding, not the starting point. Notes also
-include personal explanations and REPL verification so that claims about behavior are checked
-against observation rather than accepted passively.
+Syntax نتیجه‌ی نهایی فهم است، نه نقطه‌ی شروع آن. هر یادداشت همچنین شامل توضیح شخصی و راستی‌آزمایی در
+REPL است تا ادعاهای مربوط به رفتار زبان با مشاهده بررسی شوند، نه این‌که منفعلانه پذیرفته شوند.
 
-## Learning and Documentation Workflow
+## روش یادگیری و مستندسازی
 
-Daily learning notes belong in the relevant topic directory under `notes/`. Reusable structures
-belong in `templates/`. When a topic cluster is complete, a polished narrative can be prepared under
-`drafts/medium/`, while condensed visual-content drafts can be prepared under `drafts/instagram/`.
+یادداشت‌های روزانه در پوشه‌ی موضوع مربوط به خود و زیر `notes/` قرار می‌گیرند. قالب‌های
+قابل‌استفاده‌ی مجدد در `templates/` نگه‌داری می‌شوند. پس از تکمیل یک خوشه‌ی موضوعی، نسخه‌ی روایی و
+ویرایش‌شده‌ی آن در `drafts/medium/` و نسخه‌ی فشرده‌ی محتوای بصری در `drafts/instagram/` آماده
+می‌شود.
 
-The learner writes the explanations and code. Review focuses on correctness, precision, hidden
-assumptions, and the difference between observed behavior and mental-model claims.
+یادگیرنده متن و کد را خودش می‌نویسد. بازبینی بر دقت، درستی، فرض‌های پنهان و تفاوت میان رفتار
+مشاهده‌شده و ادعاهای مدل ذهنی تمرکز دارد.
 
-## Progress Tracking
+## پیگیری پیشرفت
 
-The table below is the initial map of the conceptual journey. It is intentionally broad and can be
-refined as the study progresses.
+جدول زیر نقشه‌ی اولیه‌ی مسیر مفهومی پروژه است و با پیشرفت مطالعه می‌تواند دقیق‌تر شود.
 
-| Core topic                   | Central computational question                                                               | Status      | Primary notes                                              |
-| ---------------------------- | -------------------------------------------------------------------------------------------- | ----------- | ---------------------------------------------------------- |
-| **State & Memory**           | How can a program preserve, update, and retrieve information over time?                      | In progress | [`notes/01-state-and-memory/`](notes/01-state-and-memory/) |
-| **Control Flow**             | How can a program choose actions, repeat work, and determine execution order?                | Not started | —                                                          |
-| **Data Organization**        | How can related values be represented, grouped, and accessed effectively?                    | Not started | —                                                          |
-| **Abstraction**              | How can complexity be hidden while useful behavior remains available?                        | Not started | —                                                          |
-| **Composition**              | How can smaller behaviors be combined into larger systems?                                   | Not started | —                                                          |
-| **Errors & Failure**         | How can a program detect, represent, and recover from things going wrong?                    | Not started | —                                                          |
-| **Concurrency & Asynchrony** | How can a program coordinate work that does not complete in a single uninterrupted sequence? | Not started | —                                                          |
-| **Communication & I/O**      | How can a program exchange information with the outside world?                               | Not started | —                                                          |
-| **Identity & Scope**         | How can a program determine which value or resource a name refers to?                        | Not started | —                                                          |
-| **Execution Runtime**        | How does the JavaScript runtime evaluate code and manage execution resources?                | Not started | —                                                          |
+| موضوع اصلی                   | پرسش محاسباتی مرکزی                                                           | وضعیت        | یادداشت‌های اصلی                                           |
+| ---------------------------- | ----------------------------------------------------------------------------- | ------------ | ---------------------------------------------------------- |
+| **State و Memory**           | برنامه چگونه اطلاعات را در طول زمان حفظ، به‌روزرسانی و بازیابی می‌کند؟        | در حال انجام | [`notes/01-state-and-memory/`](notes/01-state-and-memory/) |
+| **Control Flow**             | برنامه چگونه انتخاب می‌کند، کار را تکرار می‌کند و ترتیب اجرا را تعیین می‌کند؟ | شروع نشده    | —                                                          |
+| **Data Organization**        | مقدارهای مرتبط چگونه نمایش داده، گروه‌بندی و دسترسی‌پذیر می‌شوند؟             | شروع نشده    | —                                                          |
+| **Abstraction**              | چگونه پیچیدگی پنهان می‌شود، درحالی‌که رفتار مفید در دسترس می‌ماند؟            | شروع نشده    | —                                                          |
+| **Composition**              | رفتارهای کوچک چگونه به سیستم‌های بزرگ‌تر ترکیب می‌شوند؟                       | شروع نشده    | —                                                          |
+| **Errors و Failure**         | برنامه چگونه خطاها را تشخیص می‌دهد، نمایش می‌دهد و از آن‌ها عبور می‌کند؟      | شروع نشده    | —                                                          |
+| **Concurrency و Asynchrony** | برنامه چگونه کارهایی را هماهنگ می‌کند که در یک توالی پیوسته تمام نمی‌شوند؟    | شروع نشده    | —                                                          |
+| **Communication و I/O**      | برنامه چگونه با دنیای بیرون اطلاعات مبادله می‌کند؟                            | شروع نشده    | —                                                          |
+| **Identity و Scope**         | برنامه چگونه مشخص می‌کند یک نام به کدام مقدار یا منبع اشاره دارد؟             | شروع نشده    | —                                                          |
+| **Execution Runtime**        | Runtime چگونه کد را ارزیابی و منابع اجرا را مدیریت می‌کند؟                    | شروع نشده    | —                                                          |
 
-## Repository Structure
+## ساختار مخزن
 
 ```text
 .
 ├── drafts/
-│   ├── instagram/       # Condensed visual-content drafts
-│   └── medium/          # Polished topic-cluster drafts
+│   ├── instagram/       # پیش‌نویس محتوای فشرده‌ی بصری
+│   └── medium/          # پیش‌نویس مقاله‌های ویرایش‌شده
 ├── notes/
 │   └── 01-state-and-memory/
-│       └── .gitkeep
+│       ├── 01-why-state.md
+│       ├── 02-state-vs-variable.md
+│       ├── 03-memory-and-lifetime.md
+│       ├── 04-stack-and-heap.md
+│       ├── 05-reachability-and-gc.md
+│       └── 06-bindings-scope-var-let-const.md
 ├── templates/
 │   └── concept-template.md
 └── README.md
 ```
 
-## References and Tools
+## منابع و ابزارها
 
-[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) is used as a parallel
-reference. Runtime behavior is explored with the personal REPL at
-[runtimejs.hoce1n.ir](https://runtimejs.hoce1n.ir/). Professional application context comes from
-work with Next.js 15 and TypeScript.
+از [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) به‌عنوان مرجع موازی
+استفاده می‌شود. رفتار Runtime در REPL شخصی [runtimejs.hoce1n.ir](https://runtimejs.hoce1n.ir/)
+آزمایش می‌شود. زمینه‌ی کاربرد حرفه‌ای پروژه نیز تجربه‌ی کار با Next.js 15 و TypeScript است.
