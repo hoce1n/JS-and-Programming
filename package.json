@@ -1,0 +1,16 @@
+{
+  "name": "js-and-programming",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A long-term learning project for building a deep mental model of JavaScript and its execution runtime.",
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:md": "markdownlint '**/*.md'"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.47.0",
+    "prettier": "^3.6.2"
+  }
+}
